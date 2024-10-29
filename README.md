@@ -64,3 +64,34 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Project Setup
+
+### Clone this project
+To clone this repository
+Create a database named `diversity_assessment` in your MySQL server.
+
+### Environment Setup
+1. Copy the `.env.example` file and rename it to `.env`:
+2. Open the `.env` file and update the database variables with your database credentials:
+
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=diversity_assessment
+   DB_USERNAME=your_database_username
+   DB_PASSWORD=your_database_password
+
+### Run Migrations
+To create the necessary tables in your database, run the following command:
+
+php artisan migrate
+
+### Serve the Application
+You can run the application on your local server with the following command:
+
+php artisan serve
+
+
+The application will be accessible at `http://localhost:8000`.
+
